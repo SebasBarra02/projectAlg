@@ -35,7 +35,7 @@ public class TextComparator {
         }
 
         double similarity = (double) (totalWords - misspelledCount) / totalWords * 100;
-        System.out.println("• Palabras mal escritas junto con las palabras correctamente escritas:");
+        System.out.println("• corrected words:");
         misspelledWords.forEach((misspelled, corrected) ->
                 System.out.println(misspelled + " - " + corrected));
         return similarity;
